@@ -1,8 +1,54 @@
 ---
 # the default layout is 'page'
-icon: fas fa-info-circle
+icon: fas fa-book
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Hi～我是 wllilerjim，95 后，男，定居历史名城泉州六年，我正在努力成为独立黑客的非技术人，活跃在 Threads和即刻。
+
+> 成为完备的人，去写作，去流浪
+
+我希望我能成为更加完备的人，去记录这个世界，去更远的地方流浪。
+
+我的主职是一名线下零售运营，从业两年，未来想向产品、营销领域前进。擅长内容写作、咨询付费，社区运营、线下活动组织等。当然最终目标，还是想做出属于自己的产品，并得到大家的认可。
+
+### [](#在做的事 "在做的事")在做的事
+
+*   个人blog
+自己的数字分身，也是对外的窗口，长期持续更新，欢迎谨慎关注，大部分内容都是写给自己的。
+
+*   咨询付费
+
+1.使用HEXO+GITHUB 搭建博客网站（关注我公众号，回复教程领取指南，搭建过程遇到问题，可以找我咨询，咨询费一杯咖啡钱（36元）
+
+2.使用jekyll+github搭建博客网站 （同上领取教程与咨询付费）
+
+3.picgo博客图床搭建（同上领取教程与咨询付费）
+
+4.notion与飞书自我管理模板与使用咨询 （同上领取模板与付费咨询）
+
+5.logseq使用咨询（同上领取模板与付费咨询）
+
+6.记账神器beancount本地搭建与使用咨询（同上领取模板与付费咨询）
+
+7.各种资源文件代找服务（根据检索难度，找到后付费）
+
+8.微信小程序代搭建服务（根据搭建需求难度，进行付费）
+
+社交媒体 我对外统一使用 wlllilerjim这个 ID。你可以在以下地方找到我：
+
+即刻：[https://web.okjike.com/me](https://web.okjike.com/me)
+Bilibili：[https://space.bilibili.com/284105144?spm_id_from=333.999.0.0](https://space.bilibili.com/284105144?spm_id_from=333.999.0.0)
+少数派：[https://sspai.com/u/waj8y5gg/updates](https://sspai.com/u/waj8y5gg/updates)
+公众号：微信搜索「惜昔忆已」
+联系方式
+微信：jimwlliler（请注明来意）
+邮箱：[&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;](mailto:&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;)
+
+爱好与兴趣
+喜欢折腾各种好玩的东西
+
+### [](#一些小工具 "一些小工具")一些小工具
+
+*   科学上网
+这个是我自己在用的，稳定可靠，帮助大家找到更多可以找到的资源。<iframe src="https://console.bywa.art/aff.php?aff=23137" width="100%" height="500px"></iframe>
