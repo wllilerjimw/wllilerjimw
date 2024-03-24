@@ -47,8 +47,3 @@ Bilibili：[https://space.bilibili.com/284105144?spm_id_from=333.999.0.0](https:
 
 爱好与兴趣
 喜欢折腾各种好玩的东西
-
-### [](#一些小工具 "一些小工具")一些小工具
-
-*   科学上网
-这个是我自己在用的，稳定可靠，帮助大家找到更多可以找到的资源。<iframe src="https://console.bywa.art/aff.php?aff=23137" width="100%" height="500px"></iframe>
