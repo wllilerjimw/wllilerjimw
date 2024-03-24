@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jim">
+
+
+    <meta name="subtitle" content="成为完备的人，去写作，去流浪">
+
+
+
+    <meta name="keywords" content="知识管理 技术  写作">
+
+
+<title>【技术】NO.1用hexo++github 搭建个人blog网站 | wllilerjim</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390061246350543"
+     crossorigin="anonymous"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">wllilerjim</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">wllilerjim</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【技术】NO.1用hexo++github 搭建个人blog网站</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jim</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 16, 2023&nbsp;&nbsp;10:28:40</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%93%81%E7%89%8C/">个人品牌</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h1 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h1><h2 id="需下载安装的软件"><a href="#需下载安装的软件" class="headerlink" title="需下载安装的软件"></a>需下载安装的软件</h2><p>1.node<br>暂时无法在飞书文档外展示此内容<br>2.git<br>暂时无法在飞书文档外展示此内容<br>执行如下代码，进行本地环境运行。<br>npm install hexo-cli -g<br>hexo init blog<br>cd blog<br>npm install<br>hexo server</p>
+<h1 id="push远程仓库"><a href="#push远程仓库" class="headerlink" title="push远程仓库"></a>push远程仓库</h1><p>首先在github建立新的仓库，作为你的blog文件托管，命名需要以username.github.io命名。 <a target="_blank" rel="noopener" href="http://username.github.io/">http://username.github.io</a> ，这网址就是你的博客地址，需要把里面的username替换为你的GitHub账户名。执行以下操作：<br>git config –global user.name “你的GitHub用户名”<br>git config –global user.email “你的GitHub注册邮箱”<br>生成ssh密钥文件：<br>ssh-keygen -t rsa -C “你的GitHub注册邮箱”<br>然后直接三个回车即可，默认不需要设置密码<br>然后找到生成的.ssh的文件夹中的id_rsa.pub密钥，将内容全部复制<br>添加进入github中的ssh key。<br>配置成功后<br>Hexo g<br>Hexo s<br>Hexo d<br>完成推送和部署。</p>
+<h1 id="写作发布"><a href="#写作发布" class="headerlink" title="写作发布"></a>写作发布</h1><p>Hexo博客系统的写作方式很简单，通过Markdown语法来写作。只需要在目录post中新建md文件，就可以开始自己的写作了。</p>
+<h1 id="几个小建议"><a href="#几个小建议" class="headerlink" title="几个小建议"></a>几个小建议</h1><p>1.对于不是技术咖，单纯只是喜欢写作，那就保持写作的纯粹性。不要去想着向许多牛逼大神，把网站整得花里胡哨，不是说这样不好，而是对于技术小白，要实现这一切，会投入许多时间成本和学习成本。应为blog本质还是写作，如果一味追求网站的好看和酷炫功能，那就离原本写作初心愈来愈远。<br>2.对于本地源数据，虽然有仓库托管，但为了确保数据的稳定，最后在网盘备份一下，遇到特殊情况，可以用网盘恢复，然后安装下环境，便可以继续使用了。</p>
+<h1 id="报错参考"><a href="#报错参考" class="headerlink" title="报错参考"></a>报错参考</h1><p>问题1：<br>Please make sure you have the correct access rights<br>and the repository exists.<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/jingtingfengguo/article/details/51892864">https://blog.csdn.net/jingtingfengguo/article/details/51892864</a></p>
+<h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><p>HEXO 文档</p>
+<h1 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h1><p>如果你按照以上方法配置不成功，或者出现各种问题，那么可以联系我帮助你解决。当然由于时间与机会成本，需要你请我喝一两杯星巴克作为补偿！</p>
+<p>方法1：如果你有些担心，可进入闲鱼，拍下此链接，再来加我私人微信，确认解决完你想要解决的问题后，再进行确认收货，保证你的资金安全。<br>【闲鱼】<a target="_blank" rel="noopener" href="https://m.tb.cn/h.fxYXIH8?tk=XOAQ2JAPk0w">https://m.tb.cn/h.fxYXIH8?tk=XOAQ2JAPk0w</a> CZ0001 「我在闲鱼发布了【远程帮忙搭建github+hexo博客，让你拥有自己的写作空】」<br>点击链接直接打开<br>方法2：如果你足够信任我，那请加图片里的微信号，直接联系我，并备注说明来意。按两杯星巴克的价钱转账给我之后，我会一天之内，回复你，并解决你的问题。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%8A%80%E6%9C%AF/"># 技术</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/07/16/%E3%80%90%E6%8A%80%E6%9C%AF%E3%80%91NO.3OpenAl%20ChatGPT%20%E6%B3%A8%E5%86%8C%E6%94%BB%E7%95%A5%EF%BC%8C%E5%AE%9E%E6%B5%8B%E6%9C%89%E6%95%88/">【技术】NO.3 OpenAl ChatGPT 注册攻略，实测有效</a>
+            
+            
+            <a class="next" rel="next" href="/2023/07/16/%E3%80%90%E6%8A%80%E6%9C%AF%E3%80%91NO.2%20picgo+github%E5%9B%BE%E5%BA%8A%E5%AE%9E%E7%8E%B0%E6%96%B9%E6%B3%95/">picgo+ github图床实现方法</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jim | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

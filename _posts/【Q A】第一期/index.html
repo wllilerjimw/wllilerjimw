@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jim">
+
+
+    <meta name="subtitle" content="成为完备的人，去写作，去流浪">
+
+
+
+    <meta name="keywords" content="知识管理 技术  写作">
+
+
+<title>【Q A】第一期：毕业季 | wllilerjim</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390061246350543"
+     crossorigin="anonymous"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">wllilerjim</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">wllilerjim</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【Q A】第一期：毕业季</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jim</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 16, 2023&nbsp;&nbsp;10:28:40</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%9D%82%E6%96%87/">杂文</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><p>运营 经验 学生 社群 校招 学校 福利 老板 社会 薪资 职业规划 扁平化管理 学生工作 工作经验 机会成本 工作岗位 社会实习 实习工作 </p>
+<h3 id="内容简介"><a href="#内容简介" class="headerlink" title="内容简介"></a>内容简介</h3><p>大家好，这是【Q&amp;A】第一期。【Q&amp;A】是由我和我女友陈同学一起主理的栏目。主要内容是通过QA形式分享我们当下关注的议题，以及我们各自的答案。每期会由一方为提问方，一方为回答方，进行探讨。<br>而这一期是结合我们刚大学毕业，对于就业，职业选择，和个人经历，来分享我的经验。希望大家听完能有收获，留言和我们互动,感谢陌生的你们！</p>
+<p><em>公众号地址：惜昔忆已</em></p>
+<p><em>播客地址：<a target="_blank" rel="noopener" href="https://wllilerjimw.podcast.xyz/">https://wllilerjimw.podcast.xyz/</a></em></p>
+<h3 id="文字记录"><a href="#文字记录" class="headerlink" title="文字记录"></a>文字记录</h3><p><em>前言</em> </p>
+<p>现在也算是就业季。虽然有很多的人他可能没有参加比较早的校招，但是很多人在经过考公考研之后，有的人可能因为暂时还没有上岸，就决定要去工作，或者说有一些人现在才开始找工作的，就是你对毕业季的那个工作的一些看法。很多人现在很迷茫，因为我们当代的社会竞争压力大，很卷。<br>主题：那么你觉得毕业之后的第一份工作是要去小型公司，还是大厂好？</p>
+<p>A:我觉得，能找到工作就不错。</p>
+<p>Q:好可以，我们今天的 QA 到此结束了。(bushi</p>
+<p>A:其实我觉得还是要根据你自身一个条件，就是分享一下我当时找工作。虽然我找工作是用了很短的时间，但如果说要真正有一个职业规划的这个意识的话，其实蛮早的。就其实很多人像我们大学生，他们有职业规划的意识，大部分我觉得应该是在大三或者说有晚一点的话会在大四的时候，大家都会想，我到底是考公还是要考研或者说我是要直接去工作？在来大三的时候，大概很多人都要做这部分抉择。有些人有可能大一大二就开始做这种抉择，但他们大一大二进来，他们不会实际行动，就因为她们只是想想而已，一般到大三的时候才会做出实际的行动。</p>
+<p>Q:那我的第一个 Q 就是针对你自己而言，你当时对自己未来的规划是怎么样的呢？</p>
+<p>A:我当时就属于那种大一刚进来，我就要想以后要怎样，但实际什么也没做，然后也没什么意识，真的有意识的话也也是大三，应该是在疫情时。就我大二下，疫情的时候是就在家里，待着很无聊。然后参与孤独的阅读者的线上课程，也参加一些学生的社群。一些社群里面就会涉及到线上的活动组织，大家一起来做一个方案，举办一场活动。</p>
+<p>Q:这是你的第一份工作吗？</p>
+<p>A:也不算工作，就算一个志愿者，涉及到一个社群的运营，然后策划一场社群的一个活动，然后让大家来参与我当时策划的。我记得我当时有个搭档，但我们大家都是孤阅的学生搭档的话，她是华东师范大学的一个硕士生，我当时想的一个方案就是结合当时的疫情，来聊说在疫情下的毕业季的我们，应该如何抉择，有了这样一个想法。至于怎样开展，就是找不同的人，比如说有考研的，有考公的，有参加工作的这三方面的人，来一起分享一下他们的一些过来人的经验方法。大概有50个人参加。<br>所以我觉得，我喜欢的工作方向偏向于社群运营这一块。经过这次活动，我就觉得我好像也可以做运营这一块的工作。之后疫情稍微好转，应该六七月份我就开始去成都找工作。那是我真正意义上第一次开始从实习生开始工作。</p>
+<p>Q:那么你当时找的那些工作是什么方面的？</p>
+<p>说话人 2 06:50<br>A:当时就是关于运营，第一个找到的工作是一个成都的，具体岗位我现在已经忘了，但是我有去那家公司，然后去了一天一个上午，然后我就走了。</p>
+<p>Q:为什么？</p>
+<p>A:其实面试的时候还OK。 这个公司算是一个 B2B 型的公司，如果你在百度上采购一些产品，它可以帮你排名靠前，好像就是百度采购的中间商吧。那么这个帮助商家入驻进去这个采购平台，就是他们的业务。我的工作就是电销，让更多商知道这个百度采购这个平台，我们来帮他们入驻，如果说那个老板同意的话，这样一个合同一个单就几万块钱，包括年费应该是以年续费的那种来算提成。但是我来实习的第一天，打了一上午电话。打着打着我就越打越觉得这不是我想要的。所以我就直接走了。</p>
+<p>Q:因为这不是你想要的运营生活？</p>
+<p>A:对。我当时还没确定真正在那个公司做，所以住的是那种廉租房，就是几十多个人住一个房间的那种，在那边待了三天。在明白自己不喜欢这个岗位之后，我就想说再看看有没有其他合适的岗位。然后等我第三天决定要回去的时候，又接到一个叫什么妈妈宝贝的公司，也是个运营岗，让我过去。但我离开学还有不到两个月，这个公司说过去工作的话至少要三个月，时间上又不太合适，所以我就回去了。回去之后我又继续投简历，然后找另一份工作就是教师的一个工作，就是去那个什么教育机构，反正就是去当老师，面试过了之后去教书教了半天，然后就回学校了。<br>这段经历只是我当时的一个职业萌芽期，有可能以后要做运营之类的岗位。回来学校之后，就比较忙，也没时间去找工作实习。当时就觉得自己喜欢读书，然后就有一个很简单的想法，毕业之后去一个书店里面当一个什么图书管理员，还是怎样，就是做一些运营策划的，觉得这样的生活挺舒服，但也只是想想，也有去通过一些渠道投一些简历，但也没具体去到现场真正面试，所以最后就跟着大流，被舍友拉去面试，进了这个公司。</p>
+<p>Q:所以你觉得毕业了之后最好是要进大的公司比较好，还是选择小一点的公司比较好？</p>
+<p>A:我觉得大小都没关系，最重要就是你要想清楚，总的来说还是要有一份工作。第一是要有一份工作，因为有第二就是说你要想清楚你做这份工作，你不要糊里糊涂的说这什么什么，你有一个自己逻辑，不管那逻辑是对的还是错的，至少有一个背后的逻辑，然后来支撑你做出这样抉择，然后进入这个公司。最重要还是选择了不要后悔。</p>
+<p>Q:所以，就你个人而言，你更偏向于选择大公司还是小公司？</p>
+<p>A:我觉得如果说你现在有两个选择，一个是大厂，一个是小厂，你都有机会进入，并且你都喜欢，那最好还是选择大厂。我觉得大厂的优势在于体系更加完备，然后福利也更加完善，晋升渠道或者其他的模块也更加多元，就抗风险会更高一些。</p>
+<p>Q:那么你进了大厂之后，你有享受到你说的这一些优势吗？</p>
+<p>A:是有的。虽然说现在这份工作也很**（自行脑补），但它基本的一些福利薪资体系都挺完善，都有享受到。</p>
+<p>Q:那么你觉得进大厂工作有没有缺点呢？</p>
+<p>A:缺点就是不太自由，我觉得在小公司有可能更加自由一点，然后管理方式可能也更加扁平化。我觉得其实我更偏向于喜欢扁平化的管理。所以说这是大厂一个缺点。</p>
+<p>Q:对，那么大厂一定意味着它的管理层级横向纵向都会有非常多，没有办法达到扁平化管理.那你会因为偏向于喜欢扁平化管理的这种环境，而从你现在大公司跳槽到小公司吗？</p>
+<p>A:成年人不可能因为一个因素就选择跳槽，那都是有综合分析之后选最优解。那么现在的话如果说有一份既是扁平化管理，并且是一份各方面福利，薪资待遇都比我现在好，那么我肯定跳。</p>
+<p>Q:那么你推荐什么样性格或者什么样的人去到大厂工作呢？</p>
+<p>A:首先是抗压能力需要强一点，就不要太玻璃心，如果太玻璃心的话，有可能很快你就在职场待不下来了。推荐读一读《钝感力》<br>另外一个就是学习能力。因为像我们这些工作都会用到很多你之前都没接触的东西，所以你必须要有很强的学习能力，尽快地去学习它，适应它，然后用它。</p>
+<p>Q:那你认为小公司的弊端在于哪里呢？</p>
+<p>A:小公司，我觉得就是抗风险能力。还有一个就是薪资福利有可能都跟不上。</p>
+<p>Q:那对于就业，你有没有什么想对于现在快要毕业或者马上要开始工作的一些人讲呢？你的学弟学妹们。</p>
+<p>A:首先需要有意识，早点做准备。比如说你要做一些运营策划或者说运营管理方面的工作。那你在大学期间就尽量去当一下学生干部，去策划一下活动，去管理一下部门里的人与事。这些和你后面的工作有很多的相通性，可以带给你很多经验。并且你以后在面试的时候，这些经验也是能帮你面试通过的一个垫脚石。第二个就是说现在因为经济环境也不是很好，就是不要太挑剔，选择一份工作。既然选择了它进入了这家公司，那就先沉下心来做个一年或者半年。不要一进来就觉得不太适合自己，马上就跳。因为这样的话你的机会成本和时间成本其实很大的。比如说你花费了很长时间，然后来面试培训，到真正上手，结果你刚干不久，就离职了，然后你又要去准备新的面试培训，这样折腾一圈，至少你半年时间没了，而且你在这过程中，你也浪费了很多机会成本。所以说首先第一个就是早做准备，做好抉择。既然选择了，那就尝试着给做下去。</p>
+<p>Q:那你刚刚有提到学生工作经验，那很多人可能会有社会实习经验，而没有学生工作经验。那么你觉得对于初校招或者说毕业了之后找工作而言，学生工作经验更重要还是社会实习经验更重要的就是指你大学期间去打的那些兼职实习工作的一些内容。你觉得把时间花在我在社会上实习比较重要，还是我把时间花在学生工作上，做一个干部比较好？</p>
+<p>A:我觉得都很重要。然后另外的话更关键的是你到底在这两方面真正学到什么东西，对于你要进入领域有没有用。其实没有孰轻孰重，最重要看你自己，但有可能很多大厂公司校招的话，还是会更注重你学校里的经验，但你的社会经历很丰富的话，而且够牛逼的话，那也就另说。</p>
+<p>Q:那对于大部分的普通的本科学校的学生来说，能够接触到非常牛逼的社会经验是一件比较困难的事情。所以你是更推荐大家能够在大学中去参加一些学校的部门，然后争取去当一些干部是吗？</p>
+<p>A:其实我觉得也要看你职业规划。假如说你是要想当研究生，然后想钻研出什么东西，就肯定不用，你就好好学，假如说你要出来做管理运营，那你肯定需要提早去跟更多人去接触，然后并懂得如何去管理人员，应用人员以及去做一些项目出来等等。</p>
+<p>Q:<br>好，谢谢。今天 QA 就到这里。           (本期完）</p>
+<hr>
+<p>感谢阅读 下期再见！</p>
+<h3 id="彩蛋"><a href="#彩蛋" class="headerlink" title="彩蛋"></a>彩蛋</h3><p><img src="https://imgs.zhubai.love/abb8e71635494d879dcc28022889f4ad.jpg" alt="大海"></p>
+<pre><code>                       *那时的我*
+</code></pre>
+<p><img src="https://imgs.zhubai.love/9d62ba3c9070416dada1b671db924ee8.jpg" alt="大海"></p>
+<pre><code>                      * 去成都面试*
+</code></pre>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E5%AF%B9%E5%A4%96%E8%BE%93%E5%87%BA/"># 对外输出</a>
+                    
+                        <a href="/tags/%E6%92%AD%E5%AE%A2/"># 播客</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/07/16/%E3%80%90%E4%B9%A6%E3%80%91NO.1%20%E8%8B%8F%E4%B8%9C%E5%9D%A1%E6%96%B0%E4%BC%A0/">【书】NO.1 苏东坡新传</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jim | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

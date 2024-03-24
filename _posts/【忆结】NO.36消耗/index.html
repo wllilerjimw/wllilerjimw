@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jim">
+
+
+    <meta name="subtitle" content="成为完备的人，去写作，去流浪">
+
+
+
+    <meta name="keywords" content="知识管理 技术  写作">
+
+
+<title>【忆结】NO.35 消耗 | wllilerjim</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390061246350543"
+     crossorigin="anonymous"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">wllilerjim</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">wllilerjim</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【忆结】NO.35 消耗</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jim</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 16, 2023&nbsp;&nbsp;10:28:40</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%9D%82%E6%96%87/">杂文</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>二月结束了，今天是三月的第一天。二月，工作占据了自己很多时间。虽然具体没有做什么，但遇到一些事情，不得不选择加班，选择去做这些事情啊，被迫去做些事情。</p>
+<p>自由的定义是有说不得权利，而目前的自己，根本没有说不的权利。许多时候都是被安排，许多时间也不是可以自主安排的。这也许就是工作，替别人打工的代价。</p>
+<p>放眼望去，大部分人也许都是这样吧，也许心有不甘，也许渐渐被驯化，习惯了没有自由，被人安排的生活了。而像自己这样，一边不甘，一边又不得不继续这样被消耗，也许才是最痛苦的，因为这种反差，造成的别扭，只有自己知道。</p>
+<p>而二月。无疑是令自己很痛苦，不断免费加班，丧失自己时间的一个月。三月不知道会怎样，但应该会好起来。</p>
+<p>这样的被消耗，也让自己警惕，需要迟早去拥有说不得权利，因为再这样持续下去，只是被无情消耗，最后自己什么也不是了。站在未来得角度，去思考，去改变这样被消耗得局面，这是自己接下来要做的，要尽可能地维护属于做自己长期有价值地事情，而避免被消耗。</p>
+<h3 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h3><p>2月的前半段，每晚阅读，每天空余时间读书，都做得不错，也获得许多启发，去促成了一些行动。后半段的消耗，打乱了日常作息，许多阅读事项都荒废了。所以接下来3月，需要有坚持毅力，不管外界环境如何变化，坚持去阅读，去获取新知。因为这是一件长期有价值，与意义的事情，对于我来说。</p>
+<h3 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h3><p>从新找到了真正对外写作的感觉。构建故事，不管是自己回忆，还是虚构，找到了自己叙事的感觉，并且也找到了剪辑视频，用影像表达自己想要的feeling的技能。这两项能力，将为自己未来埋下很大的伏笔。所以三月，自己想要用这两项能力，创作更多作品出来。发表在自己认为合适的平台。</p>
+<p>当然能够变现，成为副业是最好的。整体来说就是保持写作，创作故事，以及用影像来写作故事。</p>
+<h3 id="财务"><a href="#财务" class="headerlink" title="财务"></a>财务</h3><p>二月重新梳理了财务，以及进行了保险配置，和对于保险这边有了更加充分的意识，整体来说，以未来的眼光看现在，这些保障，用小的杠杆，撬动，对于我们来说保险是很重要的。三月，继续深入了解，并将宝贝核保通过。</p>
+<p>在对保险的理解上，也让我们更加注重身体健康。除了保险以外，就是对于长钱账户的投资，去多储蓄，多投资有价值资产，少消费，避免无意义的消费。早日实现财务自由，早日能够拥有说不得权利。</p>
+<h3 id="健康"><a href="#健康" class="headerlink" title="健康"></a>健康</h3><p>每晚锻炼，坚持了一段时间，就停止了，每天饮食记录也是断断续续。关于减肥这块，重要得是坚持，自己要更加对于自己有所自律。坚持去做好这件事。减肥，保持身体健康，这是一件很长期，需要毅力得事情。</p>
+<h3 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h3><p>二月开始，越来越多与家里人联系，与家人打电话时长也变多，这是很好得事情。在人与人得关系里，许多可能是容易被替代，离开，一段关系就结束了，但是与家人得，却是一直都存在得，并且他们一直都会支持我们。所以维护好与家人得关系，与自己认为有价值得友谊就好，对外，就不用去刻意讨好谁，而是保持拥有被讨厌得勇气就好。</p>
+<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>已经快两年了，没有升职，也没有加薪，虽然心有不甘，但也无可奈何。只能骑驴找🐎，一边苟着，一边锻炼自己能力，去找一份其他的适合得工作。现在工作对于我来说，就是一份保障稳定现金流得地方，没有太多期待，干完差不多得活就好。</p>
+<hr>
+<p>三月，希望自己减少消耗，夺取做自己认为有价值得事情。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%AF%8F%E6%9C%88%E9%80%9A%E8%AE%AF/"># 每月通讯</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/07/16/%E3%80%90%E5%BF%86%E7%BB%93%E3%80%91NO29%20%E6%96%B0%E7%94%9F/">【忆结】新生</a>
+            
+            
+            <a class="next" rel="next" href="/2023/07/16/%E3%80%90%E5%BF%86%E7%BB%93%E3%80%91NO.34%20%E5%8C%86%E5%BF%99%E7%9A%84%E4%B8%80%E6%9C%88/">【忆结】NO.34 匆忙的一月</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jim | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

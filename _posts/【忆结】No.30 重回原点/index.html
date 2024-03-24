@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jim">
+
+
+    <meta name="subtitle" content="成为完备的人，去写作，去流浪">
+
+
+
+    <meta name="keywords" content="知识管理 技术  写作">
+
+
+<title>【忆结】重回原点 | wllilerjim</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390061246350543"
+     crossorigin="anonymous"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">wllilerjim</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">wllilerjim</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【忆结】重回原点</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jim</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 16, 2023&nbsp;&nbsp;10:28:40</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%9C%88%E7%BB%93/">月结</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/0QDXOicLU8zosNuETia6bepZvGicm1BIba5jmUticaWibRy0TDGuWgTbKaiajdFNoBrcc9az5ehGP45DTVS9Lv8VMDJA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt="忆结"></p>
+<h2 id="阅读"><a href="#阅读" class="headerlink" title="阅读"></a>阅读</h2><p>阅读时间做了调整，调到了每天早上来阅读。一般在6：30起床，一直到8：00。这段不会被打扰的时间用在了阅读上。9月前一段，总是找不到时间去阅读，或者说在不恰当的时间去阅读，导致根本也没读进去什么东西。</p>
+<p>9月后一段，再对时间日程做出调整，用专门的时间段，且不被打扰时间段来进行阅读。这样的阅读效果好了很多。并且也用atimeloger记录下自己的阅读时间，用于现在的复盘使用。</p>
+<p>调整过后，最近一周阅读数据是，总体阅读时长2个半小时。在读一本赵嘉写的《一本摄影书》，读这本书目的，也是为了掌握更多关于摄影的知识，学着去用影像表达。</p>
+<p>而这本书算是一本入门书籍，主要介绍了许多摄影的基础知识，与各种使用拍照技巧，实用性很高，后面也会按照书中的介绍，去实践里面的方法，希望10月份能拍出很多好看的照片与视频。另外后面也会去看更多摄影电子杂志作品，培养自己这方面的兴趣爱好。</p>
+<p>后面的阅读计划，决定不一定每天都阅读同一本书，而是换着阅读，提前规划好自己的阅读计划，每天早上按照计划去阅读自己想要阅读的书籍。因为想要读的书太多，也希望在10月份，能够多读几本自己喜欢的书籍。</p>
+<h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>写作方面，这个月也没有主动对外输出多少东西，大部分都是对内写的flomo。但最近一直在做的就是复盘，删除与整理memo和之前的各种资料。以前，自己很少去整理，或者说懒得去整理。在阅读少楠的《知识资产，一本小册》，里面提到的观点：如果不去归纳，复盘整理自己的信息资产，这些都会成为负资产，而不是你真正拥有的知识。</p>
+<p>所以每天都会花费大段时间，去主动整理memo，这周花了2：46小时在复盘整理上，收获颇丰，更加完善的知识卡片体系，也产生了更多新的想法，以及许多卡片在整理过程中，内容相互扩充，链接，从而能够形成更加丰富有价值内容，甚至后续都可逐步单独成文。</p>
+<p>在10月，希望能将这些卡片整理的基础上，再整合成文，从而实现从想法，到多个卡片，到整理完善，到输出成文的创作闭环。</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4a6218ff-0fce-4f04-9fe6-94cc5fa03c8a/Untitled.png" alt="目前的标签与memo数"></p>
+<p>目前的标签与memo数</p>
+<p>希望10月能将memo与tag数降到1000左右。并与知识社群里的人，一起看展删除memo活动。</p>
+<h2 id="运动"><a href="#运动" class="headerlink" title="运动"></a>运动</h2><p>最近一周数据，在运动上花了6个多小时，并且每晚9：00到时间调整未自己的固定运动时间，下楼跑步5公里，就目前执行情况看，效果还可以。在10月，将会长期坚持下去。运动，流汗，总是会让人心情舒畅，并感到平静，自己很喜欢这样的感觉，在每次跑步冲刺时，好像又回到了大学时代。</p>
+<p>进入工作上，时间变得越来越珍贵，能抽出时间精力，出来运动，真的很不容易，自己通过从新的时间调整，来保证这段运动时间，来维持自己身体健康目的，是非常有必要的。</p>
+<p>因为作为打工人，身体就是革命的本钱，和老爸通话，也提到，赚钱是要赚钱，但是身体才是最重要的。赚钱需要长期主义，没办法短期冒进，突然就升职加薪，而是需要时间。身体，自己有意识去关注，就会逐渐变好，所以10月份，继续坚持去运动，并且注意饮食，注意多喝水，用小程序，app来收集与记录自己的基础数据，有意识提醒自己该吃什么，喝什么，以及身体现在的状态情况等。</p>
+<h2 id="理财"><a href="#理财" class="headerlink" title="理财"></a>理财</h2><p>通过钱迹，以及notion上搭建的记账系统，可以将自己日常花销与投资交易，都能很好的记录联动，也通过这些记录的基础数据，来判断自己目前的财务情况，及时做出取舍与调整，尽量去存钱，少花销在没有必要的事情上。</p>
+<p>整体来说，目前因为房贷与房租的大额支出，让财务情况，看起来不是很健康，短期内，也看不到涨薪机会，目前只能尽量节流，和去多尝试，去创造与开源，增加收入。逐步使整个财务情况得到改善与正向循环。</p>
+<p>并且也每个月，提前规划与做好预算，从而能监控自己不要花太多，开销过大，导致财务超支情况发生。</p>
+<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><p>这个月，在与家人与亲密关系上的沟通时长，增加了许多。对于这部分，就是打开自己多去沟通，在自己关系基本盘中，如果连与父母家人沟通上，都成问题，就很难向外拓展，与他人沟通，建立关系。而整体而言，沟通对于目前的自己是一个重要大的课题，如何去沟通，如何去处理复杂的关系。</p>
+<p>对于这方面，还有许多需要学习的东西，而目前，也正在积极去实践与寻找方法，包括学习，阅读，去重视这样的领域，希望10月的自己能够，有更大的突破，在关系处理方面，能有所发展。</p>
+<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>9月的工作，对于自己来说，就是一地鸡毛，太多东西，无法为外人道也，但通过这一次的经历，在整理中，收获了许多。一个是在工作上，自己战略上的转移，从重视运营，转向去重视销售，并由此有了许多制度性上的改变，以及从新发现，我们这种工作的本质，就是沟通与谈判，这部分能力，成为了最核心能力。</p>
+<p>而如何去提升自己的谈判沟通能力，也成了自己工作上，能否更上一层楼的关键，但也是因为9月经历的一连串事件之后，在一切回归平静，自己发现，这方面能力，自己终于有了些突破，首先是认识与意识到了这样的东西，能够觉察，并有意识去改变。</p>
+<p>另外就是在工作中，与各个人沟通时，也更加顺畅了。所以10月希望，在沟通谈判上，有更多长足发展，而不是一直被沟通谈判所困住。</p>
+<p>另外进一步完善简历，想一想自己下一步该怎么走，该做什么，想清楚了，再进行抉择是留还是走。虽然是打工人，但要为自己履历打工，如何让自己更值钱，更有稀缺性，就是我们需要做的。</p>
+<hr>
+<p>9月再见，再见所有的一地鸡毛，再见所有的坎坷，10月，回从新回头看，捡起那些鸡毛，审视那些坎坷，从中获得历史的经验，获得新的感悟，从而更加坚定理性地迈向未来。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%9C%88%E7%BB%93/"># 月结</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/07/16/%E3%80%90%E6%83%9C%E6%98%94%E5%BF%86%E5%B7%B2%E3%80%91NO.13%20%E6%97%A0%E9%A2%98/">【惜昔忆已】NO13.无题</a>
+            
+            
+            <a class="next" rel="next" href="/2023/07/16/%E3%80%90%E5%BF%86%E7%BB%93%E3%80%91NO29%20%E6%96%B0%E7%94%9F/">【忆结】新生</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jim | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

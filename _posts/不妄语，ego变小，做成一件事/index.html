@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Jim">
+
+
+    <meta name="subtitle" content="成为完备的人，去写作，去流浪">
+
+
+
+    <meta name="keywords" content="知识管理 技术  写作">
+
+
+<title>不妄语、ego变小、做成一件事 | wllilerjim</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390061246350543"
+     crossorigin="anonymous"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">wllilerjim</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">wllilerjim</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about/">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">不妄语、ego变小、做成一件事</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Jim</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">July 16, 2023&nbsp;&nbsp;10:28:40</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%9D%82%E6%96%87/">杂文</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h3 id="不妄语"><a href="#不妄语" class="headerlink" title="不妄语"></a>不妄语</h3><p>不妄语，来自万玛才旦导演。不幸的是，在这个月8号，他去世了。他拍过几部藏地电影，我不曾看过，但《气球》那一部电影封面，给我留下很深的印象，也许在豆瓣电影列表里，能看到我”想看“的标记，但却一直未曾去看。因为总感觉那样的人文电影会很沉重，而我未做好准备，去消化它。所以万玛才旦导演与他的电影，一起被我遗忘在了豆瓣的某个角落。</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/942e384e-1c7c-4144-88cb-a0e6370a69f1/Untitled.png" alt="                                                                         万码才旦电影作品 《气球》"></p>
+<pre><code>                                                                     万码才旦电影作品 《气球》
+</code></pre>
+<p>在他离开后，刷到很多关于悼念他的文章，大家都很惋惜，这样一位有才华并传承藏地文化的导演。而我也透过这些文章，开始对他有了更具体的轮廓。他<strong>克制，不去虚妄，总是说他知道的事，而对他不知道的，不妄语。</strong></p>
+<p>上一篇推文，我写知行合一，但很多时候很难去做到，只能努力朝着那个方向去，但至少做到向万码才旦导演这样，先从<strong>不妄语</strong>做起。</p>
+<h3 id="ego变小"><a href="#ego变小" class="headerlink" title="ego变小"></a>ego变小</h3><blockquote>
+<p>“知道真理不容易在手，也就不再强词夺理。知道万物有灵，也就不再唯我独尊。一点一点，是持续的行走、读书、思考，让我变小。是的，只有谦虚才能帮我保留体面。”—贾樟柯</p>
+</blockquote>
+<p>对于自我的逐步接纳，以及随着年龄渐长，不断认识自我，对于内心那个ego，也逐渐有了更深刻的认识。以自我为中心，执着于一些事，最终“执着于相，求不得苦。”</p>
+<p>佛学说“空”、放下“我执”。以往总是不喜欢这些避世之说，认为这个世界，强者为尊，什么都要去争，才能有所得到。但真正的强者，是放下“我执”,是”不知道自己知道“的”空“的状态。</p>
+<p>我尝试着开始冥想，喜欢上散步，留一部分时间，让自己什么也不做，去无聊，去放空。这样的一种清零状态，让我们对于自己更加宽容，与接纳和感恩，与此同时，一种新的力量油然而生，那是一种把ego变小之后，连接万物的力量。</p>
+<p>让ego变小，让万物穿过自己。</p>
+<h3 id="做成一件事"><a href="#做成一件事" class="headerlink" title="做成一件事"></a>做成一件事</h3><blockquote>
+<p>持续的目标，是尽可能提升「胜率」，在不断的重复中，能放大「胜率」  —海程</p>
+</blockquote>
+<p>“先做成一件事”来自于池大的建议，这也是我第一次意识到这一点。所谓的“一件事”可以是小事，比如写好一篇文章或打扫一间房间，也可以是大事，比如推动公司的一个重要项目或创建出满足大多数人需求的产品并实现商业闭环。</p>
+<p>然而，要做成一件事的前提是需要持续、不断地行动。只有这样，你才能不断提高实现目标的可能性。但很多人可能在这个漫长过程中，看不到成功的希望，放弃了。</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/84233ead-3968-4991-af32-a6a3a66aaeea/Untitled.png" alt="Untitled"></p>
+<p>理解并掌握上述的公式，也许可以帮助你更容易地做成一件事。比如，如果你不想浪费时间在抖音上，你可以卸载它，只有在必要时再下载。这样做增加了打开抖音的成本，相应地，你就不太容易产生刷抖音的想法了。</p>
+<p>如果你想养成一个好习惯，降低它的启动门槛，并设定一些奖励机制。总之，根据这个公式，调整自己做某件事的动力。对于好的习惯，增加动力；对于不好的习惯，降低动力。从而能让我们确定要做成某件事时，能偶持续，不断重复地去做，提升你做成事的概率。</p>
+<hr>
+<p>不妄语，ego变小，做成一件事，这是修炼和成长过程。当我们不妄语，减少认知之外的言辞时，我们能够更加专注于自己真正知道的东西，更加真实地表达自己。</p>
+<p>随着ego变小，我们能放下”我执“，而是更能与外界连接，关注他人的需求与整体的利益。这种转变让我们更加谦虚，能以更平静与柔和的心态去对待事物和他人。</p>
+<p>将这些修炼和觉知融入到我们生命中，我们能够更加专注于一件事情的完成。不再在内耗与”求不得苦“中消耗时间。（<strong>含Al辅助创作</strong>）</p>
+<p>参考文章</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/huWHiIXrpYzb0OY1er5miw">万玛才旦 「生命如风中的残烛，这就是无常啊」</a></li>
+<li><a target="_blank" rel="noopener" href="https://shop.vistopia.com.cn/article?article_id=663966&source=article">如何安顿个体化的生命 （成庆&amp;道长）——八分</a></li>
+<li><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/NVrpo6MDIg9uLqHj-ilikg">自律的本质与好习惯的前提</a></li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%AF%8F%E5%91%A8%E9%80%9A%E8%AE%AF/"># 每周通讯</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2023/07/16/%E5%A4%8D%E5%BC%8F%E8%AE%B0%E8%B4%A6Beancount%20%E5%88%9D%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/">复式记账Beancount初识（一）</a>
+            
+            
+            <a class="next" rel="next" href="/2023/07/16/%E3%80%90%E8%87%AA%E6%88%91%E7%AE%A1%E7%90%86%E3%80%91%E5%BC%80%E7%AF%87/">【自我管理】NO.1 开篇</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Jim | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
