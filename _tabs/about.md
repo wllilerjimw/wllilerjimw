@@ -13,7 +13,7 @@ Hi～我是 wllilerjim，95 后，男，定居历史名城泉州六年，我正�
 *   编程
 正在想做一些自己的作品，努力摸索中，求大佬带，若是有大佬带，请联系我，我可以免费干活，换技术。
 
-*   写作 小说 《恍惚中逝去的光影》 [https://read.douban.com/ebook/132143967/?dcs=search]
+*   写作 小说 (《恍惚中逝去的光影》)[https://read.douban.com/ebook/132143967/?dcs=search]
 
 联系我：
 
