@@ -29,3 +29,8 @@ Hi～我是 wllilerjim，95 后，男，定居历史名城泉州六年，我正�
 <li><em>邮箱</em>：[&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;](mailto:&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;)</li>
 
 </ul>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+	本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
