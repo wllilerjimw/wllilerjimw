@@ -16,14 +16,16 @@ Hi～我是 wllilerjim，95 后，男，定居历史名城泉州六年，我正�
 *   写作 
 小说: [https://read.douban.com/ebook/132143967/?dcs=search](https://read.douban.com/ebook/132143967/?dcs=search)
 
-联系我：
-
-即刻：[https://web.okjike.com/me](https://web.okjike.com/me)
-Bilibili：[https://space.bilibili.com/284105144?spm_id_from=333.999.0.0](https://space.bilibili.com/284105144?spm_id_from=333.999.0.0)
-
-
-微信：jimwlliler（请注明来意）
-
-邮箱：[&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;](mailto:&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;)
+<em>联系我:</em>
+<ul>
+ <li><figure><a href="https://web.okjike.com/me"><img src="https://cdnv2.ruguoapp.com/FoZREoJad7gAlOtGrxOxv65v93R_v3.jpg?imageMogr2/auto-orient/thumbnail/400x2000%3E/quality/70/interlace/1" alt="即刻"></a><figcaption><em><strong>即刻</strong></em></figcaption></figure></li>
 
 
+<li><em>Bilibili</em>：[https://space.bilibili.com/284105144?spm_id_from=333.999.0.0](https://space.bilibili.com/284105144?spm_id_from=333.999.0.0)</li>
+
+
+<li><em><strong>微信</strong></em>：jimwlliler（请注明来意）</li>
+
+<li><em>邮箱</em>：[&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;](mailto:&#x77;&#x6c;&#x6c;&#x69;&#108;&#101;&#114;&#x6a;&#105;&#109;&#x77;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;)</li>
+
+</ul>
