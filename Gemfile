@@ -16,6 +16,3 @@ group :site do
   gem "jekyll-sitemap"
   gem "jemoji"
 end
-# Add other gems here
-
-# End of file should not have 'end'
