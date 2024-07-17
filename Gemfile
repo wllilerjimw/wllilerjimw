@@ -6,9 +6,7 @@ gem 'bundler', '~> 2.4', '>= 2.4.19'
 
 
 
-group :test do
-  gem "html-proofer", "~> 3.0"
-end
+
 # Add other gems here
 
 # End of file should not have 'end'
