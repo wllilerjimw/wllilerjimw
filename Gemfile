@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem 'bundler', '~> 2.5', '>= 2.5.15'
+gem 'bundler', '~> 2.4', '>= 2.4.19'
 
 gem "jekyll", "~> 4.2"
 
