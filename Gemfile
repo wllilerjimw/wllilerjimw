@@ -6,8 +6,15 @@ gem 'bundler', '~> 2.4', '>= 2.4.19'
 
 
 
-group :test do
-  gem "html-proofer", "~> 3.19.4"
+
+group :site do
+  gem "html-proofer", "~> 3.4" if ENV["PROOF"]
+
+  gem "jekyll-avatar"
+  gem "jekyll-mentions"
+  gem "jekyll-seo-tag"
+  gem "jekyll-sitemap"
+  gem "jemoji"
 end
 # Add other gems here
 
